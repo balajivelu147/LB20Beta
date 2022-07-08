@@ -1,0 +1,20 @@
+<h1>Home Page</h1>
+
+
+
+<mat-form-field appearance="fill">
+    <mat-label>Horizontal position</mat-label>
+    <mat-select [(value)]="horizontalPosition">
+     <mat-option value="center">Center</mat-option>
+     </mat-select>
+  </mat-form-field>
+  <mat-form-field appearance="fill">
+    <mat-label>Vertical position</mat-label>
+    <mat-select [(value)]="verticalPosition">
+      <mat-option value="top">Top</mat-option>
+       </mat-select>
+    </mat-form-field>
+  
+  <button mat-stroked-button (click)="openSnackBar()">Show snack-bar</button>
+
+  

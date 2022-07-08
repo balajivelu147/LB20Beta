@@ -1,0 +1,55 @@
+@import '~ngx-toastr/toastr';
+
+body {
+    margin: 0;
+    padding: 0;
+}
+.inputsearchbox{
+    padding: 15px 10px;   
+}
+input{
+    background-color: #fafafa;
+    font-family: inherit;
+    line-height: inherit;
+    overflow: visible;  
+    border: none;
+    border-radius: 2px;
+    padding: 4px 10px;
+    height: 50%;
+    width: 371px;
+    font-size: 20px;
+}
+    input:focus{
+        outline: none;
+    }
+button{
+    border: none;
+    cursor: pointer!important;
+    background-color: #3F51B5;
+    color:#fafafa ;
+    align-items: center;
+    // margin: 8px;
+}
+.mat-toolbar{
+    background-color: #3F51B5;
+    color:#fafafa ;
+    border-radius: 2px;  
+    justify-content: space-between;
+}
+.leftsidemenu{
+    font-size: 16px;
+    margin-left: 15px;
+}
+
+.right{
+    padding: 15px 10px; 
+}
+.mat-icon{
+    vertical-align: middle;
+    margin-bottom: 4px;
+}
+img{
+    vertical-align: middle;
+    margin-bottom: 4px;
+}
+
