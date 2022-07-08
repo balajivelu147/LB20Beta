@@ -1,0 +1,18 @@
+.inputsearchbox{
+    padding: 5px 10px;   
+}
+input{
+    background-color: #fafafa;
+    font-family: inherit;
+    line-height: inherit;
+    overflow: visible;  
+    border: none;
+    border-radius: 2px;
+    padding: 4px 10px;
+    height: 50%;
+    width: 371px;
+    font-size: 20px;
+}
+    input:focus{
+        outline: none;
+    }

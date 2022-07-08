@@ -1,0 +1,13 @@
+<div>
+    <input class="searchbox"  (keyup)="search($event)" (search)="cancelSearch()" type="search" placeholder="Search books or authors" [matAutocomplete]="auto" />
+  
+    <mat-autocomplete #auto="matAutocomplete">
+      <div *ngIf="showDropdown" >
+      <mat-option *ngFor="let item of filteredOptions"  [value]="item">
+        {{item}}
+      </mat-option>
+    </div>
+    </mat-autocomplete>
+  </div>
+  
+  

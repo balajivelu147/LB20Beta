@@ -1,0 +1,41 @@
+<mat-toolbar>
+    <button mat-button class="leftsidemenu"  [routerLink]='["/home"]'>
+      <span><mat-icon>book</mat-icon>Book cart</span> 
+    </button>
+  
+    <div class="inputsearchbox">
+      <app-search></app-search>
+    </div>
+  
+    <div class="right">
+      <button mat-button *ngIf="login">
+        <mat-icon matBadge={{books2}} matBadgeColor="warn">favorite</mat-icon>
+      </button>
+  
+      <button mat-button>
+        <mat-icon matBadge={{books1}} matBadgeColor="warn">shopping_cart</mat-icon>
+      </button>
+  
+      <button mat-button *ngIf="!login"
+        (click)=logout()>Login</button>
+  
+      <button mat-button *ngIf="login"  [matMenuTriggerFor]="menu">
+        <mat-icon>account_circle</mat-icon>Kokila
+      </button>
+  
+      <mat-menu #menu="matMenu">
+        <button style="background-color: white; color: black;" mat-menu-item>My
+          Orders</button>
+        <button style="background-color: white;color: black;" mat-menu-item (click)=loginS()>Logout</button>
+      </mat-menu>
+  
+  
+      <button mat-button>
+        <mat-icon> format_color_fill</mat-icon>
+      </button>
+  
+      <button mat-button><img height="25px" src="assets/download.png">Swagger</button>
+    </div>
+  </mat-toolbar>
+
+
