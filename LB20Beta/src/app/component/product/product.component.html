@@ -1,0 +1,41 @@
+<div class="row no-gutters pt-3">
+    <div class="col-md-2 col-sm-12">
+      <app-product-filter (filteredValue)="filterValue($event)" (priceFilter)="priceValue($event)"></app-product-filter>
+      </div>
+    
+    <!-- <div class="row" id="row"> -->
+      <div class="col mb-3">
+        <div class="d-flex justify-content-start card-deck-container mb-4">
+    
+        <!-- <div class="row"> -->
+            <div *ngFor="let item of filterCategory ,let i=index" class="p-1">
+              <mat-card class="book-card mat-elevation-z2"id="card">
+                <mat-card-content>
+                  <div class="image">
+                    <img class="preview-image" mat-card-image
+                      src="https://bookcart.azurewebsites.net/Upload/{{item.coverFileName}}">
+                    <div class="icon__overlay">
+                      <!-- <span  mat-raised-button (click)="toggleValue(i)" [ngClass]="{'black':!toggle, 'red':toggle}" class="material-icons ">
+                        favorite
+                      </span> -->
+                      <span><i *ngIf="myArray.includes(item.bookId)" class="fa-solid fa-heart  icon1" (click)="deleteWishlist(i)"></i></span>
+                      <span><i *ngIf="!myArray.includes(item.bookId)" class="fa-solid fa-heart icon2"(click)="toggleValue(i)" ></i></span>
+                    </div>
+                    <div class="image__overlay">
+                      <div class="image__title"><button id="button">{{item.title}}</button></div>
+                    </div>
+                  </div>
+                </mat-card-content>
+                <h6><a style="text-decoration:none;">{{item.title}}</a></h6>
+                <h6>{{item.price | currency:"INR":"symbol"}}</h6>
+                <button class="btn btn-primary"  (click)="addToCart(i)">
+                  <i style="font-size: 12px;;" class="fa-solid fa-cart-shopping">
+                    Add to Cart
+                  </i></button>
+              </mat-card>
+            </div>
+          </div>
+    
+        </div>
+      </div>
+    <!-- </div> -->
