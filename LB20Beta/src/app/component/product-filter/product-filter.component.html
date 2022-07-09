@@ -1,0 +1,42 @@
+<div calss="row">
+    <div class="col-12">
+      <mat-card style="margin-top:17px;">
+        <div class="col-12">
+          <div>
+  
+          </div>
+          <mat-card-actions>
+            <a (click)="filter1('')" [style.background-color]='background1' type="button">All Categories</a>
+            <mat-divider></mat-divider>
+            <a (click)="filter2('Biography')" [style.background-color]='background2' type="button">Biography</a>
+            <mat-divider></mat-divider>
+            <a (click)="filter3('Fiction')" [style.background-color]='background3' type="button">Fiction</a>
+            <mat-divider></mat-divider>
+            <a (click)="filter4('Mystery')" [style.background-color]='background4' type="button">Mystery</a>
+            <mat-divider></mat-divider>
+            <a (click)="filter5('Fantasy')" [style.background-color]='background5' type="button">Fantacy</a>
+            <mat-divider></mat-divider>
+            <a (click)="filter6('Romance')" [style.background-color]='background6' type="button">Romance</a>
+            <mat-divider></mat-divider>
+          </mat-card-actions>
+        </div>
+        </mat-card>
+        </div>
+  
+    <div id="box">
+      <mat-card id="mat-card">
+        <mat-card-title>Price Filter</mat-card-title>
+      </mat-card>
+      <mat-card>
+        <mat-slider style="width:240px" [max]="max" [min]="min" [step]="step" [thumbLabel]="thumbLabel"
+        [(ngModel)]="value" (change)="onChange($event)"></mat-slider>
+        <div class="d-flex justify-content-around p-2">
+          <div><strong>{{min | currency: 'INR'}}</strong></div>
+          <div><strong>to</strong></div>
+          <div><strong>{{value | currency: 'INR'}}</strong></div>
+        </div>
+      </mat-card>
+    </div>
+    
+  </div>
+  
