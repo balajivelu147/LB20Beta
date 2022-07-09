@@ -2,12 +2,10 @@
     <div class="col-md-2 col-sm-12">
       <app-product-filter (filteredValue)="filterValue($event)" (priceFilter)="priceValue($event)"></app-product-filter>
       </div>
-    
-    <!-- <div class="row" id="row"> -->
+
       <div class="col mb-3">
         <div class="d-flex justify-content-start card-deck-container mb-4">
     
-        <!-- <div class="row"> -->
             <div *ngFor="let item of filterCategory ,let i=index" class="p-1">
               <mat-card class="book-card mat-elevation-z2"id="card">
                 <mat-card-content>

@@ -21,7 +21,7 @@ export class ApiserviceService {
      }
   
      getToken(){
-      var t=
+      var t='eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJzdWZpeWEiLCJ1c2VyaWQiOiI5OTciLCJ1c2VyVHlwZUlkIjoiMiIsImh0dHA6Ly9zY2hlbWFzLm1pY3Jvc29mdC5jb20vd3MvMjAwOC8wNi9pZGVudGl0eS9jbGFpbXMvcm9sZSI6IjIiLCJqdGkiOiJkZTYyMGMyZC02ZmVmLTRkNzgtOGEwOS1hNTI0NmJiMGIxYzIiLCJleHAiOjE2NTcxOTk4MTcsImlzcyI6Imh0dHBzOi8vbG9jYWxob3N0OjQ0MzY0LyIsImF1ZCI6Imh0dHBzOi8vbG9jYWxob3N0OjQ0MzY0LyJ9.-T1oeJZJUN5ziHMksb6CIZmBJFWM349NY-d_BprWFEo'
        this.tokens =   this.headers.append('Authorization', 'Bearer  '+t),
                       this.headers.set('accept','text/plain')
                       return this.tokens;
